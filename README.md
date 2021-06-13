@@ -2,9 +2,7 @@
 
 Project 'Weather-LookUp' is a coding challenge exercise which retrieves weather details from openweathermap.org API, parse data and display as shown in the below screenshots. 
 
-<img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/EnterCityName.jpeg?" width="200" height="390">    <img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/WeatherInfoList.jpeg?" width="200" height="390">
-
-<img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/WeatherInfoDetail.jpeg?" width="200" height="390">
+<img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/EnterCityName.jpeg?" width="200" height="390">    <img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/WeatherInfoList.jpeg?" width="200" height="390">    <img src="https://github.com/abhilashmaddukuri/Weather-LookUp/blob/master/screenshots/WeatherInfoDetail.jpeg?" width="200" height="390">
 
 ## Main Features: 
 - Fetch results from below API
