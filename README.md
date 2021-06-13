@@ -6,7 +6,7 @@ Project 'Weather-LookUp' is a coding challenge exercise which retrieves weather 
 
 ## Main Features: 
 - Fetch results from below API
-  - https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api key}&units=imperial
+  - https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=imperial
 - Parse and display response in the recycler-view(with date/time), and onclick of any weather info displays the detailed description
 - Validated the city name, and Display generic error message when no response is received from API
 
