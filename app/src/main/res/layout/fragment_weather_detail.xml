@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/weather_detail_padding">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.weatherInfoClicked.temp + `° F`}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_temp_textsize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_feels_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_feels_like_margin_top"
+            android:text="@{`Feels Like: ` + viewModel.weatherInfoClicked.tempFeelsLike + `° F`}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_temp_feels_like_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_temp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_weather_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_weather_main_margin_top"
+            android:text="@{viewModel.weatherInfoClicked.weatherMain}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_weather_main_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_feels_like" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_weather_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_weather_description_margin_top"
+            android:text="@{viewModel.weatherInfoClicked.weatherDescription}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_weather_description_textsize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_weather_main" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.abhi.weather_lookup.viewmodel.WeatherListViewModel" />
+    </data>
+
+</layout>

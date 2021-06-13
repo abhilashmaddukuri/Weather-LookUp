@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Find Weather Information Screen  -->
+    <dimen name="city_lookup_parent_padding">40dp</dimen>
+    <dimen name="btn_lookup_margintop">10dp</dimen>
+    <dimen name="btn_lookup_marginLeft">50dp</dimen>
+    <dimen name="btn_lookup_marginRight">50dp</dimen>
+    <dimen name="edt_city_textsize">16dp</dimen>
+    <dimen name="btn_lookup_textSize">16dp</dimen>
+
+    <!--  Weather Info Item  -->
+    <dimen name="item_weather_padding_left">35dp</dimen>
+    <dimen name="item_weather_padding_right">35dp</dimen>
+    <dimen name="item_weather_padding_top">15dp</dimen>
+    <dimen name="item_weather_padding_bottom">15dp</dimen>
+
+    <!-- Weather Detail Layout -->
+    <dimen name="weather_detail_padding">25dp</dimen>
+    <dimen name="tv_temp_textsize">40sp</dimen>
+    <dimen name="tv_temp_feels_like_textsize">16sp</dimen>
+    <dimen name="tv_feels_like_margin_top">20dp</dimen>
+    <dimen name="tv_weather_main_textsize">25sp</dimen>
+    <dimen name="tv_weather_main_margin_top">35dp</dimen>
+    <dimen name="tv_weather_description_textsize">16sp</dimen>
+    <dimen name="tv_weather_description_margin_top">20dp</dimen>
+
+</resources>

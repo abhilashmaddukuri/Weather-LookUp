@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/CityLookupFragment">
+
+    <fragment
+        android:id="@+id/CityLookupFragment"
+        android:name="com.abhi.weather_lookup.view.fragments.CityLookupFragment"
+        android:label="@string/city_lookup_fragment_label"
+        tools:layout="@layout/fragment_city_lookup">
+
+        <action
+            android:id="@+id/action_CityLookupFragment_to_WeatherListFragment"
+            app:destination="@id/WeatherListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/WeatherListFragment"
+        android:name="com.abhi.weather_lookup.view.fragments.WeatherListFragment"
+        tools:layout="@layout/fragment_weather_list">
+
+        <action
+            android:id="@+id/action_WeatherListFragment_to_CityLookupFragment"
+            app:destination="@id/CityLookupFragment" />
+
+        <action
+            android:id="@+id/action_WeatherListFragment_to_WeatherDetailFragment"
+            app:destination="@+id/WeatherDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WeatherDetailFragment"
+        android:name="com.abhi.weather_lookup.view.fragments.WeatherDetailFragment"
+        tools:layout="@layout/fragment_weather_detail">
+
+        <action
+            android:id="@+id/action_WeatherDetailFragment_to_WeatherListFragment"
+            app:destination="@id/WeatherListFragment" />
+    </fragment>
+</navigation>

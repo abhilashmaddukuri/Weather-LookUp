@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Weather-LookUp</string>
+
+    <!--  Find Weather Info at the city  -->
+    <string name="hint_city_name">Enter City Name</string>
+    <string name="btn_lookup">lookup</string>
+    <string name="title_activity_weather_info">WeatherInfoActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="city_lookup_fragment_label">Find Weather Information</string>
+    <string name="weather_list_fragment_label">City</string>
+    <string name="weather_detail_fragment_label">City</string>
+
+    <!-- Generic Error Messages -->
+    <string name="error_edt_city_validation">Please enter city name to continue</string>
+    <string name="error_api_response">Please try with the different city</string>
+
+    <!-- API Response Failed - Snackbar button text -->
+    <string name="okay">OK</string>
+
 </resources>
